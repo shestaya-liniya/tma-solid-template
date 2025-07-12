@@ -1,4 +1,4 @@
 @import 'tailwindcss';
 #app {
-	padding-top: var(--safe-area-inset-top);
+  padding-top: var(--safe-area-inset-top);
 }

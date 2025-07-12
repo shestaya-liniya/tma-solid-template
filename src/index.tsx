@@ -16,15 +16,15 @@ const debug = startParam?.includes('debug') || import.meta.env.DEV
 const eruda = startParam?.includes('eruda') || import.meta.env.DEV
 
 init({
-	debug,
-	eruda,
-	mockForWebK: platform === 'web',
-	mockForMacOS: platform === 'macos',
+  debug,
+  eruda,
+  mockForWebK: platform === 'web',
+  mockForMacOS: platform === 'macos',
 })
-	.then(() => {
-		render(() => <App />, document.getElementById('app')!)
-	})
-	.catch(error => {
-		// TODO: Should properly handle the error.
-		console.error(error)
-	})
+  .then(() => {
+    render(() => <App />, document.getElementById('app')!)
+  })
+  .catch(error => {
+    // TODO: Should properly handle the error.
+    console.error(error)
+  })
